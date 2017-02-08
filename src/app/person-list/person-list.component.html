@@ -1,0 +1,12 @@
+<table class="tftable">
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>City</th>
+	<tr *ngFor="let person of people" (click)="onSelect(person)">
+		<td>{{person.id}}</td>
+		<td>{{person.name}}</td>
+		<td>{{person.city}}</td>
+	</tr>
+</table>
+<person-details [person]="selectedPerson"></person-details>

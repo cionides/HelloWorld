@@ -1,0 +1,17 @@
+<div *ngIf="person">
+    <h2>{{person.name}} properties</h2>
+    <table>
+   	 <tr>
+   		 <td><label>ID: </label></td>
+   		 <td>{{person.id}}</td>
+   	 </tr>
+   	 <tr>
+   		 <td><label>Name: </label></td>
+   		 <td><input [(ngModel)]="person.name" placeholder="name" /></td>
+   	 </tr>
+   	 <tr>
+   		 <td><label>City: </label></td>
+   		 <td><input [(ngModel)]="person.city" placeholder="city" /></td>
+   	 </tr>
+    </table>
+</div>
