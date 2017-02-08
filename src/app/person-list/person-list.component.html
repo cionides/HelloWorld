@@ -3,10 +3,13 @@
 		<th>ID</th>
 		<th>Name</th>
 		<th>City</th>
-	<tr *ngFor="let person of people" (click)="onSelect(person)">
+	</tr>
+	<tr *ngFor="let person of people" 
+	[class.selected]="person === selectedPerson"
+	(click)="onSelect(person)">
 		<td>{{person.id}}</td>
 		<td>{{person.name}}</td>
 		<td>{{person.city}}</td>
 	</tr>
 </table>
-<person-details [person]="selectedPerson"></person-details>
+<app-person-details [person]="selectedPerson"></app-person-details>

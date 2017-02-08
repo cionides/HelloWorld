@@ -3,10 +3,10 @@ import { PersonService } from '../model/person.service'
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  providers: [PersonService],
   selector: 'app-person-list',
   templateUrl: './person-list.component.html',
-  styleUrls: ['./person-list.component.css']
+  styleUrls: ['./person-list.component.css'],
+  providers: [PersonService]  
 })
   
 export class PersonListComponent implements OnInit {

@@ -8,7 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
   
 export class PersonDetailsComponent implements OnInit {
-
+  
+  @Input()
+  person:Person
+  
   constructor() { }
 
   ngOnInit() {
